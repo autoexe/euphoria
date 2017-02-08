@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/card_view"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="6.0dip"
+                                    android:background="@color/white"
+                                    card_view:cardCornerRadius="1.0dip">
+
+    <LinearLayout
+        android:id="@+id/rootLL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4.0dip">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/photoTV"
+                android:layout_width="fill_parent"
+                android:layout_height="170.0dip" />
+
+            <TextView
+                android:id="@+id/txtDurationVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16.0dip"
+                android:layout_marginTop="16.0dip"
+                android:background="@drawable/rounded_textview"
+                android:gravity="center_horizontal"
+                android:padding="1.0dip"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/titleLL"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:layout_alignBottom="@id/photoTV"
+                android:background="@color/black_alpha_50"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/titleTV"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:padding="6.0dip"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
